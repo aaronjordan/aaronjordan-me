@@ -3,4 +3,5 @@ node_modules/
 .DS_Store
 aaronjordan-me-rc1/
 aaronjordan-me-rc2/
-client/
+client/node_modules
+client/build
