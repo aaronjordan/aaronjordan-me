@@ -27,9 +27,11 @@ app.post('/email', (req, res) => {
   });
 });
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'index.html'));
-// });
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
 
 // app.get('/sitemap.xml', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'sitemap.xml'));

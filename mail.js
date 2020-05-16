@@ -21,6 +21,7 @@ const sendMail = (name, email, body, cb) => {
     to: `${recpnt}`,
     subject: `New Contact Form Submission from ${domain}`,
     text: `A new form submission was recieved from ${name} (reply-to: ${email}):
+    
     ${body}
     
     Message passed at ${time}.`
